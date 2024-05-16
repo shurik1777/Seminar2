@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<body>
+<div class="container d-flex justify-content-center">
+    <h1>Загружаем новый файл на сервер</h1></div>
+<br>
+<div class="container content-center">
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file><br>
+        <input type=submit value=Загрузить><br>
+    </form>
+</div>
+</body>
+{% endblock %}
