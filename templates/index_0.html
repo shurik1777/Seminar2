@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<body>
+<form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Имя">
+    <input type="submit" value="Нажми меня">
+</form>
+</body>
+
+{% endblock %}
