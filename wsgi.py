@@ -1,5 +1,5 @@
 # from app_01 import app
-from task_02 import app
+from task_01 import app
 
 """
 При обнаружении данного файла можно через консоль запускать простыми командами
