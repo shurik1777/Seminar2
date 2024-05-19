@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Вычисление операции
+{% endblock %}
+
+{% block content %}
+<body>
+    <form action="/calculate" method="post">
+        <label for="num1">Введите первое число:</label>
+        <input type="number" id="num1" name="num1" required>
+        <label for="num2">Введите второе число:</label>
+        <input type="number" id="num2" name="num2" required>
+        <label for="operation">Выберите операцию:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+            <option value="divide">Деление</option>
+        </select>
+        <button type="submit">Вычислить</button>
+    </form>
+</body>
+{% endblock %}
