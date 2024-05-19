@@ -17,13 +17,13 @@ PASSWORD = '123'
 
 
 @app.route('/')
-@app.route('/index/')
+@app.route('/index')
 def index():
     return render_template('index_1.html',
                            title='Стартовая страница')
 
 
-@app.route('/data/')
+@app.route('/data')
 def data():
     return render_template('data.html',
                            title='Информация')

@@ -10,19 +10,19 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index/')
+@app.route('/index')
 def index():
     return render_template('index_0.html',
                            title='Стартовая страница')
 
 
-@app.route('/data/')
+@app.route('/data')
 def data():
     return render_template('data.html',
                            title='Информация')
 
 
-@app.route('/submit/', methods=['POST'])
+@app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
         name = request.form.get('name')

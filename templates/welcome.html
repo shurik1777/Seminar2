@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Успешный вход
+{% endblock %}
+
+{% block content %}
+<body>
+<div class="container mt-5">
+    <h2>Добро пожаловать, {{ name }}!</h2>
+    <a href="/logout" class="btn btn-outline-primary">Logout</a>
+</div>
+</body>
+{% endblock %}

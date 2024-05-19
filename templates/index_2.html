@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Приветствие - {{ title }}
+{% endblock %}
+
+{% block content %}
+<body>
+<form action="/welcome" method="post" class="mt-5">
+    <fieldset>
+        <legend>Введите ваше имя и электронную почту</legend>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя">
+
+        <label for="email">Электронная почта:</label>
+        <input type="text" id="email" name="email" placeholder="Электронная почта">
+
+        <button type="submit">Отправить</button>
+    </fieldset>
+</form>
+</body>
+{% endblock %}

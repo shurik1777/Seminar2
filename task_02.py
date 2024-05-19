@@ -12,19 +12,19 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index/')
+@app.route('/index')
 def index():
     return render_template('index.html',
                            title='Стартовая страница')
 
 
-@app.route('/data/')
+@app.route('/data')
 def data():
     return render_template('data.html',
                            title='Информация')
 
 
-@app.route('/upload/', methods=['GET', 'POST'])
+@app.route('/upload', methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
         file = request.files.get('file')
