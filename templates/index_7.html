@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Подсчет слов
+{% endblock %}
+
+{% block content %}
+    <form action="/submit" method="post">
+        <label for="text">Введите текст:</label>
+        <textarea id="text" name="text" rows="3" cols="50"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+{% endblock %}
